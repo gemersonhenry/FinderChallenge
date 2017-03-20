@@ -6,6 +6,7 @@
     <meta viewport="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet" type="text/css">
     <link href="/vendor/pure/pure-min.css" rel="stylesheet">
+    <link href="/vendor/awesomplete/awesomplete.min.css" rel="stylesheet">
     <link href="/styles/index.css" rel="stylesheet">
   </head>
   <body>
@@ -17,8 +18,8 @@
         <div class="pure-u-2-3">
           <div class="search-form">
             <form class="pure-form">
-              <input type="text" placeholder="Enter text">
-              <button class="pure-button pure-button-primary" type="submit">Search</button><a class="link-search-form" href="#">Guardar busqueda</a>
+              <input type="text" placeholder="Enter text" id="inputSearch">
+              <button class="pure-button pure-button-primary" type="submit" id="btnSearch">Search</button><a class="link-search-form" href="#" id="saveSearch">Guardar busqueda</a>
             </form>
           </div>
         </div>
@@ -44,7 +45,7 @@
         </aside>
         <section class="books pure-u-3-4">
           <div class="pure-u-1-1">
-            <div class="pure-u-1-3"><img class="image-book" src="./images/book.jpg">
+            <div class="pure-u-1-3 e-book"><img class="image-book" src="./images/book.jpg">
               <h4>Titulo del libro</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -53,7 +54,7 @@
                 consequat. 
               </p>
             </div>
-            <div class="pure-u-1-3"><img class="image-book" src="./images/book.jpg">
+            <div class="pure-u-1-3 e-book"><img class="image-book" src="./images/book.jpg">
               <h4>Titulo del libro</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -62,7 +63,7 @@
                 consequat. 
               </p>
             </div>
-            <div class="pure-u-1-3"><img class="image-book" src="./images/book.jpg">
+            <div class="pure-u-1-3 e-book"><img class="image-book" src="./images/book.jpg">
               <h4>Titulo del libro</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -73,7 +74,7 @@
             </div>
           </div>
           <div class="pure-u-1-1">
-            <div class="pure-u-1-3"><img class="image-book" src="./images/book.jpg">
+            <div class="pure-u-1-3 e-book"><img class="image-book" src="./images/book.jpg">
               <h4>Titulo del libro</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -82,7 +83,7 @@
                 consequat. 
               </p>
             </div>
-            <div class="pure-u-1-3"><img class="image-book" src="./images/book.jpg">
+            <div class="pure-u-1-3 e-book"><img class="image-book" src="./images/book.jpg">
               <h4>Titulo del libro</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -91,7 +92,7 @@
                 consequat. 
               </p>
             </div>
-            <div class="pure-u-1-3"><img class="image-book" src="./images/book.jpg">
+            <div class="pure-u-1-3 e-book"><img class="image-book" src="./images/book.jpg">
               <h4>Titulo del libro</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -111,8 +112,11 @@
       </footer>
     </div>
     <script src="/vendor/underscore/underscore-min.js"></script>
+    <script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/vendor/awesomplete/awesomplete.min.js"></script>
     <script src="/scripts/global.js"></script>
     <script src="/scripts/search-form.js"></script>
+    <script src="/scripts/load-data.js"></script>
     <script src="/scripts/app.js"></script>
   </body>
 </html>
