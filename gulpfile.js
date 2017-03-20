@@ -42,6 +42,9 @@ var pathsVendorToWatch = [
 var pathData = [
     "src/*.json"
 ];
+var pathImages = [
+    "src/images/*"
+]
 
 var taskPugSelf = function(){
     return gulp.src(pathsView)
@@ -78,6 +81,11 @@ gulp.task("data", function(){
     return gulp.src(pathData)
         .pipe(gulp.dest("./public/"));
 });
+
+gulp.task("images", function(){
+    return gulp.src(pathImages)
+        .pipe(gulp.dest("./public/images"));
+})
 
 var taskVendorSelf = function(){
     return gulp.src(pathVendor)
@@ -117,5 +125,5 @@ gulp.task("ServerBrowserSync", function(){
     });
 });
 
-gulp.task("build", ["view", "styles", "scripts", "data", "vendor"]);
+gulp.task("build", ["view", "styles", "scripts", "data", "vendor", "images"]);
 gulp.task("server", ["ServerBrowserSync", "watch"]);
