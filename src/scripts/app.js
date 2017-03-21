@@ -2,6 +2,10 @@
   main script for only runs every function
 */
 
-searchForm();
+page('/', function () {
+	searchForm();
+	loadData();	
+});
 
-loadData();
+page('/');
+

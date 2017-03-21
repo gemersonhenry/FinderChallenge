@@ -3,13 +3,13 @@ function searchForm(){
 
     dom.btnSearch.on('click', function (e){
     	e.preventDefault();
-    	console.log('click');
+    	//console.log('click');
     })
     dom.inputSearch.on('keyup', function (e){
-    	console.log(e);
+    	//console.log(e);
     })
-    dom.saveSearch.on('click', function (e){
+    dom.btnSaveSearch.on('click', function (e){
     	e.preventDefault();
-    	console.log(e.target);
+    	//console.log(e.target);
     })
 }
